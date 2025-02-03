@@ -1,0 +1,138 @@
+AI-FRONT END APPLICATION
+	ML ALG -BE+PYTHON
+	DL ALG
+	NLP ALG
+	CNN CODE
+	DL CODE
+GEN AI FRONT END APPPLICATION
+	LLM MODEL
+		OPEN AI
+		META
+		GOOGLE
+	TO BUILD THE BACKEND-- STATA,EDA,PYTHON FUNCTION,OOPS,SQL ALSO REQUIRED
+
+TRADITIONAL LEARNING VS MACHINE LEARNING
+machine learn fron historical data
+historical data-supervised, unsupervised
+
+supervised-sql db(mysql)
+unsupervised- nosql db(mongo db)
+
+7 steps of ML
+Gathering data
+preparing data
+Choosing a model
+Training
+evaluation
+Hyperpragmameter training
+predection
+
+
+
+ml transformeers
+sklearn.impute  --transformer would hellp to fill the missing values 
+sklearn.LabelEncoder  --transform categorical value to numerical value
+
+
+****12th Nov****
+
+
+overfitting -Train the model with more attributes is called overfitting
+if model overfit then less acuuracy and high error
+if model overfit you never build a good model
+techniques- remove irrelavant attributes
+techniques-PCA (Principle componet analysis)
+cross validation
+regularization
+dropout the neurons
+ensemble learning
+
+
+underfitting-  Train the model with less attributes
+techniques- add more relavant attributes to overcome underfitting problem
+
+
+
+PCA-Principle component analysis or Dimensionallity reduction
+Stesp to follow PCA
+
+step1: No.of features or dimensions   sample size 
+step2: Computation mean of the variable
+	mean(x), mean(y)
+step3: Calculate of co-variance matrix
+	order of co-variance matrix is given n*n=2*2
+	In the co-variance matrix we will get n(square) order base as (x*x),(x,y),(y,x),(y,y)
+	co-variance matrix denoted as
+		cov(x,x)    cov(x,y)
+	s=  cov(y,x)	cov(y,y)
+	
+	cov(x,y)=(sum)i=1 to n (((〖(xi-(x̅)(yi-(y-))/(N-1)
+step4: Calculateof Eigen Values
+	Eigen values for a matrix is calculated as follows
+	det(S-λI)
+
+16-11-2024
+API KEY- AIzaSyDaLYswVgpdCDyVlE3FDBrBfnv9VWBeziE
+201-2G password:   NiT@4599
+
+
+20-11-2024
+regularization-regularize to high coefficient of independent variable
+	lasso regression
+	ridge regression
+	
+	high bias low variance -underfitting
+	low bias high variance- overfit
+	
+27/11/2024
+support vector regression
+		distance between 2spport vector is called marginal distance
+		decision boundary
+		
+
+
+
+28/11/2024
+Decision Tree
+
+Random Forest
+
+Tree classify the day
+decision tree regression -DV is continuous
+
+decision tree classifier
+	how to create a root node
+	purity split
+	gini
+	information gain
+	entropy
+	leaf node
+	
+
+ml--classification has more power comapre to regression.
+
+
+======================================================
+02-Dec-2024
+tasks:	
+1-build the regression model hyperparameter tuining table
+2- build the lazyregression model 
+3-post in GitHub
+4- try giving interview
+
+
+1-rebuild the model without scale-->accuracy---(Completed)
+2- scale down test records from 25% to 20% (completed)
+3- apply normalization feature scaling techniques  (completed)
+4- logistic regression hyperparameter tuning (completed)
+5-code random_state=0  (completed)
+	random_state=100, build the model accuracy
+	random_state=51,41,21,0
+	
+========================================================
+
+
+
+
+
+

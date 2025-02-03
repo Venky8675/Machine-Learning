@@ -1,0 +1,231 @@
+Machine Learning:
+	Machine learning enavles a machine to automatically learn from data, improve performance from experience and predict things without being explicity programmed.
+	
+TRADITIONAL LEARNING -- (input + logic = output)
+machine learning --> (input & outup) == + 
+
+mcahine larning has 2 models
+Training Phase and Testing Phase
+- Historical data is known as Training Data.
+- Machine learning is a combination of Computer science and statistical data.
+ 
+ -Input past data (training)-- Machine learning algorithm(learn from data)--Building logical models--(new data)---output
+ Machine learning follows the above process 
+If we add the data in the middle also it performs as per the new data
+
+Machine Learning Features:
+-Machine learning uses data to detect various patterns in a given dataset.
+- It can learn from past data and improve automatically.
+-It is a data driven technology (it takes data automatically)
+-Machine learning is much similar to data mining as it also deals with the huge amount of the data.
+ 
+Classifications of ML:
+1. Supervised Learning:Supervised learning is a type of machine learning method, in which we provide a 
+sample labeled data
+to the machine learning system in order to train it and on that basis it predicts the output.
+- It trys to generate the input data to output data
+- spam filtering
+- CLassifed into 2 categories
+	classification
+	regression
+	
+2.Unsupervised Learning:The goal of unsupervised learning is to restructure the input data into new features
+or a group of objects with similar patterns
+- machine learns without any supervision
+- We cant predict the output
+-CLassifed into 2 categories
+		Clustering
+		Association
+3.Reinforcement learning: Feedback based learning method.
+	learning agent gets a reward for each right action
+	gets penalty for each wrong action.
+	The agent learns automatically with these feedbacks and improves its performance
+
+MAchine Learning life cycle:
+1.Gathering Data: 
+2.Data preparation: 
+Raw data-structure data-Data preprocessing-EDA-Insights,Reports,Visual Graphs
+
+3.Data wrangling:Issues--Missing values,Duplicate data, Invalid data
+4.Analyse data: 
+Selectionof analytical techniques
+Building models
+Review the result
+
+5.Train model:
+
+6.Test Model:
+7.Deployment
+
+Linear Regression
+- It makes predictions for continuous/real or numeric variables such as salaes,salary,age,product price etc.,
+- Linear regression algrmthm shows a linear relationship between a dependent(y) and one or more indpendent variables(x)
+Types of linear regression
+1.SImple Linear Regression
+	If a single independent variable is used to predict the value of numeric dependent variable.
+2.Multiple linear regression: 
+	If more than one indpendent variable is used to predict the value of numerical dependent variable.
+Linear regression Line: A linear line shows the relationship between the dependent and indpendent variables is called a regression line.
+Positive Linear relationship: 
+If the dependent variable increases on the Y-axis and idnependent variable increases on X-axis.
+Negative Linear relationship:
+If the dependent variable decreases on the Y-axis and indpendent variable increase on the X-axis.
+
+Best Fit line: 
+- It is the error between predicted values and actual values should be minimized.
+- The best fit line will have the least error
+- to find the best fit line, so to calculate this we use cost function
+
+Cost Function:
+The cost function is used to find the accuracy of the mapping function.
+Which maps the input variable to output variable.
+
+	MSE-Mean squared error	
+		average of squared error occured between the predicted values and actual values.
+	Residuals:
+		- The distance between the actual value and predicted value is called residual.
+		- If the observed points are far from the regression line, then the residual will be high and so cost function will high
+		-If scatter points are close to regression line, then the residual will be small and hence the cost function.
+	
+	Gradient Descent:
+		Gradient descent is used to minimize the MSE by calculating the gradient off the cost function.
+		A regression model uses gradient descent to upgrade the coefficents of the line by reducing the cost function.
+		It is done by random selecting values of coefficient
+		They iteratively update the values to reach the minimum cost function.
+R-Squared:
+	R-Squared is a statistical method that determines the goodness of fit	
+	It measures the strength of the rellationship between the dependent and independent variables on a scale of 0-100%
+	The high value of R-squared determines the less difference between the predicted values and actual values and hence represents a good model
+	It also called a coefficient of determination.
+	
+	R-squared=Explained variation/Total variation
+	
+	multicolinearity :
+		it means high correlation between the indpendent variables.
+		Due to multicolinearity it may difficult to find the true relationship between the predictors and target variables.
+		
+======
+Simple Linear Regression:
+	Simple Linear Regression, where a single Independent/Predictor(X) variable is used to model the response/Dependent variable (Y).
+	
+	It is a type of Regression algorithms that models the relationship between a dependent variable and 
+	a single independent variable.
+	
+- Simple linear Regression is that the dependent variable must be a continuous value.
+- The indpendent variable can be measured on continuous or categorical values.
+
+
+Model the relationship between the two variables:
+- Such as the relationship between Income and expenditure, experience and Salary etc.,
+Forecasting New Observations:
+- Such as weather forecating according to temparature,
+- revenue of the company according to the investiment in a year, etc.,
+
+y=a0+a1+epsilon(E)
+a0=Intercept of the Regression Line
+a1= Slope of the regression line
+epsilon(E)- The error term
+
+
+Multiple Linear Regression:
+- Multiple Linear Regression is one of the importnat regression algorithms which models the 
+linear relationship between a single dependent continuous variable and more than one independent variaable.
+
+- Key points:
+	For MLR, the dependent  variable(Y) must be continuous
+	But the indpendent variable may be continuous or categorical form.
+	- Each feature variable must model the linear relationship with the dependent variable.
+	-MLR tries to fit a regression line through a multidimensional space of data points.
+	
+In MLR, the dependent variable(Y) is a linear combination of multiple predictor variables x1,x2,x3....xn
+It is a enhancement of Simple Linear Regression.	
+		
+- A linear relationship should exist between the Dependent and predictor variables.
+- The regression residuals must be normally distributed.
+- MLR assumes little or no multicolinearity(correlation between the indpendent variable) in data
+
+
+-- Main steps of deploying the MLR Model:
+	Data Pre-Processing steps
+	Fitting the MLR model to the training set
+	Predicting the result of the test set
+		
+		
+=========================================
+Backward Elimination:
+	steps of Backward Elimination
+	step1:- Firstly need to select a significance level to stay in the model.(SL=0.05)
+	step2:- Fit the complete model with all possible predictors/indpendent variables.
+	step3:- Choose the predictor which has the highest P-Value, such that	
+		a. If p-value>SL go to step 4
+		b. Else finish, and our model is ready
+	step 4: Remove the predictor.
+	steps5: Rebuild and fit the model with the remaining variables.
+	
+Need of Backward Elimination
+- An optimal Mutiple Linear Regression Model
+
+
+
+
+
+===============
+Random Forest Regressor Parameter:
+====================
+"squared_error" for the mean squared error, which is equal to variance reduction as feature selection criterion 
+and minimizes the L2 loss using the mean of each terminal node, 
+"friedman_mse", which uses mean squared error with Friedman's improvement score for potential splits,
+ "absolute_error" for the mean absolute error, which minimizes the L1 loss using the median of each 
+ terminal node, 
+ "poisson" which uses reduction in Poisson deviance to find splits. Training using "absolute_error"
+ is significantly slower than when using "squared_error".
+
+
+how to find a root node 
+Purity splits
+
+ 
+ 
+ Classification
+Decision Tree
+SVM
+SQL
+SQL Joins
+House price prediction using regression
+Logistic regression
+Lambda Function
+Recursion
+Regression
+SVR
+KNN
+Polynomial regression	   (Comleted)
+Python functions
+regularization		
+Gradient Descent,SGD,BGD   (Completed)
+Multiple Linear Regression (completed)
+Simple Linear Regression    (completed)
+Data processing for ML	    (Normalizer and Standardization)(completed)
+Inferential Stats
+Descriptive stats
+EDA
+Seaborn
+loops (completed)
+Data visualization
+
+
+
+#XGBOOST Parameter
+base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=None,
+              num_parallel_tree=None, random_state=None
+			
+
+build all classification models			
